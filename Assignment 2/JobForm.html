@@ -15,13 +15,79 @@
 <fieldset>
 <legend>Personal Details</legend>
 <!-- Yaha personal wale fields ayenge -->
+  <label for="name">Full Name</label>
+<input type="text" id="name" placeholder="Enter your full name" required minlength="3">
+
+<label for="email">Email</label>
+<input type="email" id="email" placeholder="example@gmail.com" required>
+
+<label for="password">Password</label>
+<input type="password" id="password" placeholder="Min 6 characters" required minlength="6">
+
+<label for="phone">Phone Number</label>
+<input type="tel" id="phone" placeholder="10 digit mobile number" required pattern="[0-9]{10}">
+
+<label for="website">Portfolio Website</label>
+<input type="url" id="website" placeholder="https://yourwebsite.com">
+
+<label for="age">Age</label>
+<input type="number" id="age" placeholder="Enter age" min="18" max="60" required>
+
+<label for="dob">Date of Birth</label>
+<input type="date" id="dob" required>
+
+<label for="time">Preferred Interview Time</label>
+<input type="time" id="time">
+
+<label for="color">Favourite Color</label>
+<input type="color" id="color">
+
+<label for="address">Address</label>
+<textarea id="address" placeholder="Enter your full address" rows="3" required></textarea>
+
 </fieldset>
 
 <!-- Dusra box - Job Details -->
 <fieldset>
 <legend>Job Details</legend>
 <!-- Yaha job wale fields ayenge -->
+  <label>Gender</label>
+<input type="radio" id="male" name="gender" value="male"> <label for="male">Male</label>
+<input type="radio" id="female" name="gender" value="female"> <label for="female">Female</label>
+
+<br><br>
+<label>Skills</label>
+<input type="checkbox" id="html"> <label for="html">HTML</label>
+<input type="checkbox" id="css"> <label for="css">CSS</label>
+<input type="checkbox" id="js"> <label for="js">JavaScript</label>
+
+<label for="city">City</label>
+<select id="city" required>
+<option value="">Select City</option>
+<option value="budaun">Budaun</option>
+<option value="bareilly">Bareilly</option>
+<option value="delhi">Delhi</option>
+</select>
+
+<label for="post">Position You Want</label>
+<input type="text" id="post" list="posts" placeholder="Type or select">
+<datalist id="posts">
+<option value="Shop Assistant">
+<option value="Computer Operator">
+<option value="Sales Boy">
+</datalist>
+
+<label for="exp">Experience (Years): 0 to 10</label>
+<input type="range" id="exp" min="0" max="10">
+
+<label for="resume">Upload Resume</label>
+<input type="file" id="resume">
+
+<label for="why">Why do you want this job?</label>
+<textarea id="why" placeholder="Write in 2-3 lines" rows="3"></textarea>
 </fieldset>
+  <button type="submit">Submit</button>
+<button type="reset">Reset</button>
 
 </form>
 </body>
