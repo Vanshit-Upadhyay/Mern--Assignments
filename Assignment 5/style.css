@@ -1,0 +1,115 @@
+:root {
+  --main-color: #4A2400;
+  --cream-bg: #FFF4E0;
+  --orange: #FF7A00;
+  --white: #ffffff;
+  --heading-font: 'Sora', sans-serif;
+  --body-font: 'DM Sans', sans-serif;
+}
+
+body {
+  font-family: var(--body-font);
+  background: var(--cream-bg);
+  color: var(--main-color);
+  margin: 0;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  font-family: var(--heading-font);
+}
+
+/* Hero - Positioning ka use */
+.hero {
+  background: var(--main-color);
+  color: var(--white);
+  padding: 40px 16px;
+  position: relative;
+}
+
+.badge {
+  background: var(--orange);
+  color: var(--white);
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+.hero-img {
+  width: 280px;
+  border-radius: 14px;
+  border: 4px solid var(--orange);
+  margin-top: 16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  background: var(--orange);
+  color: var(--white);
+  padding: 12px 22px;
+  text-decoration: none;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Features - Normal flow + inline-block, Flex nahi */
+.feature-box {
+  background: var(--white);
+  border: 2px solid var(--main-color);
+  border-radius: 14px;
+  padding: 16px;
+  margin: 10px;
+  width: 250px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+}
+
+.gallery-img {
+  width: 200px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 8px;
+}
+
+.review-box {
+  background: var(--white);
+  padding: 16px;
+  margin: 12px auto;
+  width: 80%;
+  max-width: 500px;
+  border-left: 6px solid var(--orange);
+  text-align: left;
+}
+
+input, textarea {
+  width: 90%;
+  max-width: 400px;
+  padding: 10px;
+  border: 2px solid var(--main-color);
+  border-radius: 8px;
+}
+
+button {
+  background: var(--orange);
+  color: var(--white);
+  border: none;
+  padding: 10px 22px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+button:hover {
+  background: var(--main-color);
+}
+
+footer {
+  background: var(--main-color);
+  color: var(--white);
+  padding: 14px;
+  margin-top: 20px;
+}
