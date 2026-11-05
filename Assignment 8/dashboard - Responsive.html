@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chai Adda - Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; }
+body { font-family: 'DM Sans', sans-serif; background: #FBF3E4; color: #12372A; margin: 0; }
+.dashboard { display: grid; grid-template-columns: 200px 1fr; grid-template-areas: "header header" "sidebar main" "footer footer"; min-height: 100vh; }
+.header { grid-area: header; background: #12372A; color: white; padding: 16px 20px; font-family: 'Sora', sans-serif; font-size: 20px; font-weight: 700; display: flex; justify-content: space-between; align-items: center; }
+.header a { color: white; text-decoration: none; font-size: 14px; font-family: 'DM Sans', sans-serif; margin-left: 16px; }
+.header a:hover { color: #FF7A00; }
+.sidebar { grid-area: sidebar; background: white; padding: 20px; }
+.sidebar p { padding: 10px 0; border-bottom: 1px solid #eee; margin: 0; }
+.main { grid-area: main; padding: 20px; }
+.box { background: white; padding: 16px; border-radius: 12px; margin-bottom: 14px; }
+.box h3 { font-family: 'Sora', sans-serif; margin: 0 0 8px 0; }
+.footer { grid-area: footer; background: #12372A; color: white; text-align: center; padding: 14px; }
+
+@media (max-width: 768px) {
+  .dashboard { grid-template-columns: 1fr; grid-template-areas: "header" "sidebar" "main" "footer"; }
+  .header { font-size: 18px; }
+  .sidebar { display: flex; gap: 16px; overflow-x: auto; padding: 12px 20px; }
+  .sidebar p { border-bottom: none; white-space: nowrap; }
+  .main { padding: 16px; }
+}
+@media (max-width: 480px) {
+  .header { flex-direction: column; gap: 10px; text-align: center; }
+  .header a { margin: 0 8px; }
+  .sidebar { gap: 12px; padding: 10px 14px; }
+  .main { padding: 12px; }
+  .box { padding: 14px; }
+  .box h3 { font-size: 17px; }
+  .box p { font-size: 15px; }
+}
+</style>
+</head>
+<body>
+<div class="dashboard">
+<div class="header">
+<span>Chai Adda - Owner Dashboard</span>
+<span><a href="gallery- Responsive.html">Gallery</a>
+  <a href="product-grid - Responsive.html">Products</a>
+  <a href="dashboard - Responsive.html">Dashboard</a></span>
+</div>
+<div class="sidebar">
+<p>Home</p>
+<p>Orders</p>
+<p>Menu</p>
+<p>Reviews</p>
+<p>Settings</p>
+</div>
+<div class="main">
+<div class="box"><h3>Today's Orders</h3><p>120 cups of chai sold today.</p></div>
+<div class="box"><h3>Total Income</h3><p>Rs. 2,500 today from chai and pakoras.</p></div>
+<div class="box"><h3>Top Item</h3><p>Kulhad Chai is the most loved item.</p></div>
+</div>
+<div class="footer">© 2026 Chai Adda, Budaun</div>
+</div>
+</body>
+</html>

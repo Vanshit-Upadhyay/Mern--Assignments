@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chai Adda - Gallery</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; }
+body { font-family: 'DM Sans', sans-serif; background: #FBF3E4; color: #12372A; margin: 0; padding: 0; }
+nav { display: flex; gap: 20px; justify-content: center; background: #12372A; padding: 14px; }
+nav a { color: white; text-decoration: none; font-weight: bold; }
+nav a:hover { color: #FF7A00; }
+h1 { font-family: 'Sora', sans-serif; text-align: center; margin-top: 20px; padding: 0 16px; }
+p { text-align: center; padding: 0 16px; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; max-width: 900px; margin: 20px auto; padding: 0 20px; }
+.gallery img { width: 100%; height: 180px; object-fit: cover; border-radius: 12px; }
+
+@media (max-width: 768px) {
+  h1 { font-size: 26px; }
+  .gallery { grid-template-columns: repeat(2, 1fr); }
+  .gallery img { height: 150px; }
+}
+@media (max-width: 480px) {
+  nav { flex-direction: column; align-items: center; gap: 10px; }
+  h1 { font-size: 22px; }
+  p { font-size: 15px; }
+  .gallery { grid-template-columns: 1fr; padding: 0 14px; }
+  .gallery img { height: 200px; }
+}
+</style>
+</head>
+<body>
+<nav>
+<a href="gallery- Responsive.html">Gallery</a>
+<a href="product-grid.html">Products</a>
+<a href="product-grid - Responsive.html">Dashboard</a>
+</nav>
+<h1>Chai Adda Gallery</h1>
+<p>Our chai, pakoras and adda moments - 9 photos using CSS Grid.</p>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=400" alt="Chai 1">
+<img src="https://images.unsplash.com/photo-1561336313-0bd5e0b27ec8?w=400" alt="Chai 2">
+<img src="https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=400" alt="Chai 3">
+<img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400" alt="Chai 4">
+<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400" alt="Chai 5">
+<img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400" alt="Chai 6">
+<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400" alt="Chai 7">
+<img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=400" alt="Chai 8">
+<img src="https://images.unsplash.com/photo-1521302080334-4bebac2763a6?w=400" alt="Chai 9">
+</div>
+</body>
+</html>
